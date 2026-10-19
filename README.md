@@ -9,11 +9,13 @@ npm install
 npm run dev
 ```
 
-Then open the URL Vite prints (default `http://localhost:5173`).
+Because this site deploys to GitHub Pages under `/CLARA_webpage/`, open:
+
+`http://localhost:5173/CLARA_webpage/`
 
 ```bash
 npm run build    # production build to dist/
-npm run preview  # preview the production build
+npm run preview  # preview the production build (same /CLARA_webpage/ path)
 ```
 
 ## Content sources

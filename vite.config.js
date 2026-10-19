@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Use '/' for local preview. Change to '/CLARA_webpage/' only if deploying to that subpath.
-  base: '/',
+  // Required for GitHub Pages project site: https://<user>.github.io/CLARA_webpage/
+  base: '/CLARA_webpage/',
   publicDir: 'public',
   server: {
     port: 5173,

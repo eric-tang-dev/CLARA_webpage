@@ -25,9 +25,11 @@ const lightboxCaption = document.querySelector('.lightbox-caption');
 document.querySelectorAll('.enlarge').forEach((btn) => {
   btn.addEventListener('click', () => {
     if (!lightbox || !lightboxImg) return;
-    const src = btn.dataset.full || btn.querySelector('img')?.src;
-    const caption = btn.dataset.caption || '';
     const img = btn.querySelector('img');
+    // Prefer the rendered <img> URL so GitHub Pages base path is respected
+    // (Vite rewrites src=, but not data-full=).
+    const src = img?.currentSrc || img?.src || btn.dataset.full;
+    const caption = btn.dataset.caption || '';
     lightboxImg.src = src;
     lightboxImg.alt = img?.alt || '';
     if (lightboxCaption) lightboxCaption.textContent = caption;
