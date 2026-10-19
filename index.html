@@ -6,7 +6,7 @@
     <title>CLARA — Clinical Learning, Assessment &amp; Review Assistant</title>
     <meta
       name="description"
-      content="CLARA helps nursing educators assess clinical skills with expert-grounded video annotation and research toward explainable, step-level feedback."
+      content="CLARA is a Purdue research project developing AI tools to help nursing educators review clinical skills and give students more detailed feedback."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,15 +61,12 @@
             <p class="eyebrow">
               Clinical Learning, Assessment &amp; Review Assistant
             </p>
-            <h1>
-              Helping nursing educators assess clinical skills more consistently
-              and at greater scale
-            </h1>
+            <h1>Helping nursing students improve, one clinical skill at a time</h1>
             <p class="section-lede intro-lede">
-              CLARA is a Purdue research project that uses authentic student
-              skill-validation videos and expert annotations to support
-              step-level clinical skills assessment—and to build toward
-              explainable, actionable feedback for learners.
+              CLARA is a Purdue research project developing AI tools to help
+              nursing educators review clinical skills and give students more
+              detailed feedback. Our work combines videos of students practicing
+              nursing procedures with assessments from clinical experts.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#tool">Explore the tool</a>
@@ -83,37 +80,33 @@
       <section class="section section-why" id="why">
         <div class="section-inner narrow">
           <p class="eyebrow">Why this matters</p>
-          <h2>Faculty time and individualized feedback are hard to scale</h2>
+          <h2>Every student needs feedback. Instructor time is limited.</h2>
           <p>
-            Clinical skills “checkoffs” require one-on-one competency validation.
-            That takes substantial instructor time and expert judgment—especially
-            for subtle errors such as sterile-field breaches—so programs face a
-            tradeoff between how many students they can train and how carefully
-            each performance is reviewed. CLARA aims to support educators with
-            structured, expert-grounded assessment tools so learners can get
-            clearer practice feedback without proportionally increasing faculty
-            workload.
+            Reviewing a nursing procedure takes time and close attention.
+            Instructors need to assess each step, notice subtle mistakes, and
+            explain what a student can improve. CLARA aims to support this work
+            so students have more opportunities to learn from practice.
           </p>
 
           <div class="stat-row stat-row-two">
             <article class="stat">
               <p class="stat-value">≈5.3 hrs</p>
               <p class="stat-label">
-                Faculty observation to validate one eight-minute procedure for a
-                cohort of 40 students (excluding setup, debriefing, and retakes)
+                Time for one instructor to observe a single eight-minute
+                procedure across 40 students—before setup, debriefing, or
+                retakes
               </p>
               <p class="stat-source">Source: ShahLab.AI Phase 2 proposal</p>
             </article>
             <article class="stat">
               <p class="stat-value">1:40</p>
               <p class="stat-label">
-                Local skills-lab example cited by project partners: about one
-                instructor to 40 students in the nursing skills lab, versus about
-                1:8 in clinical precepting settings
+                About one instructor to 40 students in a local nursing skills
+                lab, versus about 1:8 in clinical precepting settings
               </p>
               <p class="stat-source">
-                Source: CLARA pitch materials (local partner context—not a
-                national average)
+                Source: CLARA pitch materials (local example—not a national
+                average)
               </p>
             </article>
           </div>
@@ -124,63 +117,59 @@
       <section class="section section-approach" id="approach">
         <div class="section-inner">
           <p class="eyebrow">Our approach</p>
-          <h2>Step-level scoring beyond pass / fail</h2>
+          <h2>Looking beyond pass or fail</h2>
           <p class="section-lede">
-            Experts annotate each procedural step across three dimensions so
-            evaluation can capture accuracy, execution quality, and context—not
-            only whether an action occurred.
+            A completed step does not tell the whole story. Our annotation
+            framework asks clinical experts to consider whether a step was
+            correct, how well it was performed, and what circumstances affected
+            it.
           </p>
 
           <div class="framework-grid">
             <article class="framework-card">
               <h3>Correctness</h3>
-              <p>
-                Whether each step is performed accurately according to clinical
-                standards.
-              </p>
+              <p>Was the step performed correctly?</p>
             </article>
             <article class="framework-card">
               <h3>Performance</h3>
-              <p>How effectively and smoothly each step is executed.</p>
+              <p>How well was the step performed?</p>
             </article>
             <article class="framework-card">
               <h3>Allowance</h3>
               <p>
-                External factors that may affect task execution (contextual
-                difficulty).
+                What external conditions affected the student’s performance?
               </p>
             </article>
           </div>
 
           <div class="functions-block">
-            <h3 class="functions-heading">Intended learner-facing functions</h3>
+            <h3 class="functions-heading">
+              <span class="label-planned">Planned learner features</span>
+            </h3>
             <p class="functions-note">
-              <span class="label-planned">Research goals</span>
-              Examiner, Personal Coach, and Learning Diary describe the project’s
-              intended continuous-learning cycle. The working system today is the
-              expert annotation tool below; automated student-facing assessment is
-              planned next-step work.
+              Our goal is to connect assessment, feedback, and progress tracking
+              in one learning experience.
             </p>
             <ul class="role-list compact">
               <li>
                 <span class="role-num">01</span>
                 <div>
                   <strong>Examiner</strong>
-                  <span>Step- and error-level assessment</span>
+                  <span>Identify procedural steps and errors.</span>
                 </div>
               </li>
               <li>
                 <span class="role-num">02</span>
                 <div>
                   <strong>Personal Coach</strong>
-                  <span>Actionable, skill-specific feedback</span>
+                  <span>Explain what to improve.</span>
                 </div>
               </li>
               <li>
                 <span class="role-num">03</span>
                 <div>
                   <strong>Learning Diary</strong>
-                  <span>Longitudinal skill-progress tracking</span>
+                  <span>Track improvement across practice sessions.</span>
                 </div>
               </li>
             </ul>
@@ -192,31 +181,27 @@
       <section class="section section-tool" id="tool">
         <div class="section-inner">
           <p class="eyebrow">Inside the tool</p>
-          <h2>
-            <span class="label-existing">Existing</span>
-            Expert annotation workspace
-          </h2>
+          <h2>Inside CLARA’s annotation tool</h2>
           <p class="section-lede">
-            Clinical partners and annotators use CLARA’s nursing video annotation
-            system to review authentic skill-validation recordings and build
-            expert-grounded ratings.
+            Our annotation tool lets clinical experts review nursing skills
+            videos and record detailed assessments of each procedural step.
+            These reviews help us build the data and assessment standards used in
+            our AI research.
           </p>
 
           <ol class="tool-steps">
             <li>
-              <strong>Select a procedure video</strong>
-              Choose a skill (for example, Foley catheter) and open a specific
-              validation recording from the procedures menu.
+              <strong>Choose a video</strong>
+              Open a nursing skill and select a student practice recording.
             </li>
             <li>
-              <strong>Mark procedural steps</strong>
-              Play the video, navigate step by step, and mark events such as
-              sterile breaches or allowance periods on the timeline.
+              <strong>Review and mark procedural steps</strong>
+              Watch the video, move through each step, and mark events such as
+              sterile breaches or allowance periods.
             </li>
             <li>
-              <strong>Add ratings and rationales</strong>
-              Score correctness and performance for each recorded action, flag
-              ambiguous cases, and save the expert review.
+              <strong>Add ratings and explanations</strong>
+              Score correctness and performance, note why, and save the review.
             </li>
           </ol>
 
@@ -225,7 +210,7 @@
               type="button"
               class="enlarge"
               data-full="/assets/annotation-workspace.png"
-              data-caption="Existing annotation workspace: video player, recorded actions with C/P ratings, sterile-breach and allowance controls, and timeline."
+              data-caption="Review procedural steps, add ratings, and mark events on the video timeline."
               aria-label="Enlarge annotation workspace screenshot"
             >
               <img
@@ -234,8 +219,8 @@
               />
             </button>
             <figcaption>
-              Annotation workspace — experts review video, score steps, and mark
-              sterile breaches or allowance. Click to enlarge.
+              Review procedural steps, add ratings, and mark events on the video
+              timeline. Click to enlarge.
             </figcaption>
           </figure>
 
@@ -244,7 +229,7 @@
               type="button"
               class="enlarge"
               data-full="/assets/procedure-menu.png"
-              data-caption="Procedures menu for selecting a skill and individual validation videos, with completion status."
+              data-caption="Choose a nursing skill and a recording to review."
               aria-label="Enlarge procedures menu screenshot"
             >
               <img
@@ -253,7 +238,8 @@
               />
             </button>
             <figcaption>
-              Procedures menu — select a skill and video case. Click to enlarge.
+              Choose a nursing skill and a recording to review. Click to
+              enlarge.
             </figcaption>
           </figure>
 
@@ -279,23 +265,27 @@
 
           <ul class="accomplishments">
             <li>
-              Built a nursing video dataset of authentic procedural performances
-              and errors, plus an expert annotation platform and trained
-              procedural assessment models.
+              We collected nursing skills videos that capture real student
+              performances and common procedural errors.
             </li>
             <li>
-              Partnered with Purdue School of Nursing to collect skill-validation
-              videos and establish expert-grounded assessment standards.
+              We built an annotation tool so clinical experts can review those
+              videos and record detailed assessments.
             </li>
             <li>
-              Published preliminary research on video-language models for
-              AI-assisted nursing skills assessment
+              We trained models for procedural assessment and published
+              preliminary research on video-language models for AI-assisted
+              nursing skills assessment
               (<a
                 href="https://arxiv.org/abs/2509.16810"
                 target="_blank"
                 rel="noopener noreferrer"
                 >arXiv:2509.16810</a
               >).
+            </li>
+            <li>
+              We collaborate with Purdue School of Nursing to collect practice
+              videos and develop assessment standards.
             </li>
           </ul>
 
@@ -304,11 +294,11 @@
               <span class="label-planned">What’s next</span>
             </h3>
             <p>
-              Next we plan to turn the annotation tool and models into an
-              automated analysis pipeline, add a student-facing portal for
-              practice feedback, and run supervised pilots with nursing students
-              and instructors at Purdue Nursing and NCNC—followed by clinical
-              validation against expert assessments.
+              We plan to connect our annotation tools and AI models in an
+              automated video-review workflow, develop a student portal for
+              practice feedback, and test the system with nursing students and
+              instructors. We will compare its assessments with expert reviews to
+              understand where it performs well and where it needs improvement.
             </p>
           </div>
         </div>
@@ -336,7 +326,7 @@
                 type="button"
                 class="enlarge"
                 data-full="/assets/team_members.png"
-                data-caption="CLARA core team roles from project materials."
+                data-caption="CLARA core team."
                 aria-label="Enlarge core team graphic"
               >
                 <img
@@ -367,7 +357,7 @@
                   type="button"
                   class="enlarge"
                   data-full="/assets/team_members_3.png"
-                  data-caption="Leadership collaborators Libby Richards and Jennifer Coddington."
+                  data-caption="Libby Richards and Jennifer Coddington."
                   aria-label="Enlarge leadership collaborators graphic"
                 >
                   <img
@@ -385,21 +375,20 @@
               <h3>Purdue School of Nursing</h3>
               <p class="partner-role">Data &amp; lab collaboration</p>
               <p>
-                Partners on nursing video collection, expert annotation, and
-                rubric development. Faculty and students support testing to refine
-                clinical assessments. School Head Libby Richards and Nursing Lab
-                Advisor Dagne Hartman are named collaborators in project
-                materials.
+                We work with Purdue School of Nursing on video collection, expert
+                annotation, and rubric development. School Head Libby Richards and
+                Nursing Lab Advisor Dagne Hartman collaborate with our team.
+                Faculty and students are planned partners for future testing.
               </p>
             </article>
             <article class="partner">
               <h3>North Central Nursing Clinics (NCNC)</h3>
               <p class="partner-role">Clinical partnership</p>
               <p>
-                Clinical partners for practice-based validation of assessment
-                quality and workflow fit. Medical Director Jennifer Coddington
-                and Nurse Practitioner Kylie Ross are named collaborators in
-                project materials.
+                We partner with NCNC on clinical perspectives for skills
+                assessment. Medical Director Jennifer Coddington and Nurse
+                Practitioner Kylie Ross collaborate with our team. Practice-based
+                testing with preceptors is planned for a later stage.
               </p>
             </article>
           </div>
@@ -435,23 +424,11 @@
                   href="https://doi.org/10.1080/24725579.2026.2651352"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Journal version (same paper)</a
+                  >Journal version</a
                 >
                 <span class="link-meta"
                   >IISE Transactions on Healthcare Systems Engineering ·
                   DOI:10.1080/24725579.2026.2651352</span
-                >
-              </li>
-              <li>
-                <a
-                  href="/assets/CLARA_Phase2_Proposal.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >ShahLab.AI Phase 2 proposal (PDF)</a
-                >
-                <span class="link-meta"
-                  >Text export of the CLARA Phase 2 proposal used as a primary
-                  content source for this page</span
                 >
               </li>
             </ul>
@@ -464,8 +441,8 @@
       <div class="footer-inner">
         <img src="/assets/logo.png" alt="CLARA" class="footer-logo" />
         <p>
-          CLARA · Clinical Learning, Assessment &amp; Review Assistant · Purdue
-          University research showcase (draft). Not a production application.
+          CLARA · Clinical Learning, Assessment &amp; Review Assistant<br />
+          A Purdue University research project
         </p>
         <p class="footer-tagline">Train with insight. Care with confidence.</p>
       </div>
