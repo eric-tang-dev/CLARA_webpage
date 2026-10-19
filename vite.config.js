@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/CLARA_webpage/',
+  // Use '/' for local preview. Change to '/CLARA_webpage/' only if deploying to that subpath.
+  base: '/',
   publicDir: 'public',
   server: {
     port: 5173,
-    open: true,
+    open: false,
   },
 });
