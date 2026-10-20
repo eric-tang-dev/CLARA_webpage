@@ -1,6 +1,6 @@
 # CLARA Showcase Website
 
-Public, single-page research showcase for **CLARA** (Clinical Learning, Assessment & Review Assistant). This is a polished content site—not a working application.
+Public, single-page research showcase for **CLARA** (Clinical Learning and Assessment Reasoning Agent). This is a polished content site—not a working application.
 
 ## Local preview
 
