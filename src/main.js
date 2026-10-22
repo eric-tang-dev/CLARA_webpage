@@ -47,7 +47,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 
 if (!reduceMotion) {
   const targets = document.querySelectorAll(
-    '.section .eyebrow, .section h2, .section-lede, .stat-row-two, .framework-grid, .functions-block, .tool-steps, .media-block, .accomplishments, .whats-next, .partner-grid, .research-block, .team-graphics'
+    '.section .eyebrow, .section h2, .section-lede, .stat-row-two, .framework-grid, .functions-block, .tool-steps, .media-block, .accomplishments, .whats-next, .partner-grid, .research-block, .team-graphics, .photo-pair'
   );
 
   targets.forEach((el) => el.classList.add('fade-up'));
